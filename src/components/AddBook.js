@@ -38,6 +38,7 @@ class AddBook extends Component {
                   type="text"
                   name="title"
                   className="input"
+                  value={this.state.title}
                   onChange={this.onChange}
                 />
               </div>
@@ -51,6 +52,7 @@ class AddBook extends Component {
                   type="text"
                   name="author"
                   className="input"
+                  value={this.state.author}
                   onChange={this.onChange}
                 />
               </div>
@@ -64,6 +66,7 @@ class AddBook extends Component {
                   type="number"
                   name="pages"
                   className="input"
+                  value={this.state.pages}
                   onChange={this.onChange}
                 />
               </div>
@@ -73,7 +76,7 @@ class AddBook extends Component {
                 Status
               </label>
               <div className="select">
-                <select name="completed" onChange={this.onChange}>
+                <select name="completed" value={this.state.completed} onChange={this.onChange}>
                   <option value="false">To Read</option>
                   <option value="true">Read</option>
                 </select>
