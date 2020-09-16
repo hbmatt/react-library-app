@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+$box-shadow: 0.5em 0.5em 0 0 rgba(hsl(0, 0%, 4%), 0.1)!default;
+
+@import "../node_modules/bulma/bulma.sass";
+
+.box {
+  border: 1px solid rgba(hsl(0, 0%, 4%), 0.1);
+}
